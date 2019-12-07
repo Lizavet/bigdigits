@@ -39,14 +39,13 @@ i=0
 while i < 7:
 	for a in p:
 		number=int(a)
-		string=str(number)
 		for elem in Digits[number][i]:
 
 			#замена (*) на цифровое занчение
 			if elem == '*':
-				elem=string
-
+				elem=a
 			print(elem, end = "")
+
 		print("  ", end = "")
 	i+=1
 	print()
