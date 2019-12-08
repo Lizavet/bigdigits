@@ -35,8 +35,8 @@ import sys
 p=sys.argv[1]
 
 #построчный перебор семи строк в каждом элементе в Digits
-i=0
-while i < 7:
+second=(0,1,2,3,4,5,6)
+for i in second:
 	for a in p:
 		number=int(a)
 		for elem in Digits[number][i]:
@@ -47,7 +47,6 @@ while i < 7:
 			print(elem, end = "")
 
 		print("  ", end = "")
-	i+=1
 	print()
 
 
